@@ -1,7 +1,13 @@
-package com.cloudos.kafka.beans;
+package com.jvm.beans;
 
-import com.cloudos.kafka.quartz.TestQuartz;
-import org.quartz.*;
+import com.jvm.quartz.TestQuartz;
+import org.quartz.JobBuilder;
+import org.quartz.JobDetail;
+import org.quartz.Scheduler;
+import org.quartz.SchedulerFactory;
+import org.quartz.SimpleScheduleBuilder;
+import org.quartz.Trigger;
+import org.quartz.TriggerBuilder;
 import org.quartz.impl.StdSchedulerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

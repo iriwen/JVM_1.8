@@ -1,12 +1,8 @@
-package com.cloudos.kafka.quartz;
+package com.jvm.quartz;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 /**
  * Created by a0285 on 2018/7/6.

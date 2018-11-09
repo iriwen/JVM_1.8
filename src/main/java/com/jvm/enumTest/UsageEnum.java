@@ -1,4 +1,4 @@
-package com.h3c.enumTest;
+package com.jvm.enumTest;
 
 /**
  * Created by a0285 on 2018/7/23.

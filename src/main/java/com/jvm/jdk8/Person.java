@@ -1,5 +1,4 @@
-package com.h3c.jdk8;
-
+package com.jvm.jdk8;
 /**
  * Created by LENOVO on 2017/1/8.
  */

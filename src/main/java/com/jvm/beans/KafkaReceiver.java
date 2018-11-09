@@ -1,4 +1,4 @@
-package com.cloudos.kafka.beans;
+package com.jvm.beans;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;

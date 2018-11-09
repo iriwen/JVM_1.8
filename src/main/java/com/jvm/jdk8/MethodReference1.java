@@ -1,4 +1,4 @@
-package com.h3c.jdk8;
+package com.jvm.jdk8;
 
 import java.util.Arrays;
 import java.util.Collections;

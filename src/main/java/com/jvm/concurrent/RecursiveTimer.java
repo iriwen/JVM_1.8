@@ -8,6 +8,7 @@ public class RecursiveTimer {
     public static void main(String[] args) {
 
         class MyTimerTask1 extends TimerTask {
+            @Override
             public void run() {
                 System.out.println("bombling ... ");
                 new Timer().schedule(new MyTimerTask1(), 2000);

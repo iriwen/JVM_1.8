@@ -1,4 +1,4 @@
-package com.cloudos.kafka.beans;
+package com.jvm.beans;
 
 import java.util.Date;
 

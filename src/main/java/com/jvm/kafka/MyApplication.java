@@ -1,10 +1,7 @@
-package com.cloudos.kafka;
+package com.jvm.kafka;
 
-import com.cloudos.kafka.beans.KafkaSender;
-import org.quartz.JobDetail;
-import org.quartz.Scheduler;
-import org.quartz.Trigger;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jvm.beans.KafkaSender;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -16,14 +13,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class MyApplication {
 
-
-
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(MyApplication.class, args);
 
         KafkaSender sender = context.getBean(KafkaSender.class);
-
-
 
         //scheduler.start();*/
         /*for (int i = 0; i < 3; i++) {

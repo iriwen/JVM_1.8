@@ -18,11 +18,6 @@ public class MyTest6 {
             System.out.println(loader);
         }
     }
-
-
-
-
-
 }
 class  MyParent{
 

@@ -1,4 +1,4 @@
-package com.h3c.entity;
+package com.jvm.entity;
 
 /**
  * Created by LENOVO on 2017/6/28.

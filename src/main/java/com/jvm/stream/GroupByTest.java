@@ -1,6 +1,6 @@
-package com.h3c.stream1;
+package com.jvm.stream;
 
-import com.h3c.entity.Student;
+import com.jvm.entity.Student;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.h3c.joda;
+package com.jvm.joda;
 
-        import org.joda.time.DateTime;
-        import org.joda.time.LocalDate;
+import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 
 /**
  * Created by LENOVO on 2017/6/7.
@@ -11,7 +11,7 @@ public class JodaTest1 {
         DateTime today = new DateTime();
         System.out.println(today);
         DateTime tomorrow = today.plusDays(1);
-        DateTime afterOneMinute  = today.plusMinutes(1);
+        DateTime afterOneMinute = today.plusMinutes(1);
         System.out.println(afterOneMinute);
 
         System.out.println("today is : " + today.toString("yyyy-MM-dd"));

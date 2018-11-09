@@ -1,4 +1,4 @@
-package com.h3c.annotation;
+package com.jvm.annotation;
 
 /**
  * Created by iriwen on 2018/7/22.

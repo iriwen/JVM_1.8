@@ -1,4 +1,4 @@
-package com.cloudos.kafka.quartz;
+package com.jvm.quartz;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;

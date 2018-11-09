@@ -1,4 +1,4 @@
-package com.mocktest;
+package com.jvm.mocktest;
 
 import java.util.List;
 

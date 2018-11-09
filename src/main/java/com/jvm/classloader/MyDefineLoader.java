@@ -1,15 +1,13 @@
-package com.h3c.joda;
-
+package com.jvm.classloader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
 /**
- * Created by a0285 on 2018/11/9.
+ * @author  iriwen
  */
 public class MyDefineLoader extends ClassLoader {
-
     //加载类
     private String loaderName;
     private final String postFix = ".class";
@@ -26,15 +24,13 @@ public class MyDefineLoader extends ClassLoader {
 
     @Override
     public Class findClass(String classname) {
-
         byte[] b = loadClassData(classname);
-
         return defineClass(classname, b, 0, b.length);
     }
 
     public byte[] loadClassData(String classname) {
-       // classname = classname.replace(".","/") + this.postFix;
-        classname = "D:/idea-workspace/code8/build/classes/main/com/h3c/joda/JodaTest1"+this.postFix;
+        //classname = "D:/IdeaWorkSpace/JVM_1.8/out/production/classes/com/h3c/joda/JodaTest1"+this.postFix;
+        classname = classname + this.postFix;
         byte[] data = null;
         InputStream is;
         try {
@@ -51,17 +47,12 @@ public class MyDefineLoader extends ClassLoader {
         return data;
     }
 
-
     public Class test() throws Exception {
-
-        //D:\idea-workspace\code8\build\classes\main\com\h3c\joda
-
-        Class clazz = this.loadClass("com.h3c.joda.JodaTest1.class");
+        Class clazz = this.loadClass("com.h3c.joda.JodaTest1");
         return clazz;
     }
 
     public static void main(String[] args) throws Exception {
-        //D:\idea-workspace\code8\build\classes\main\
         MyDefineLoader classLoader = new MyDefineLoader("loader1");
         Class clazz = classLoader.test();
         System.out.println(clazz.newInstance());

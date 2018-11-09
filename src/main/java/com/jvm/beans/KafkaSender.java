@@ -1,4 +1,4 @@
-package com.cloudos.kafka.beans;
+package com.jvm.beans;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
