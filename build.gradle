@@ -1,0 +1,26 @@
+apply plugin: 'java'
+group 'com.h3c'
+version '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    compile("joda-time:joda-time:2.9.9",
+            "org.springframework.boot:spring-boot-starter-web:1.5.9.RELEASE",
+            "org.springframework.boot:spring-boot-starter-parent:1.5.9.RELEASE",
+            "org.springframework.kafka:spring-kafka:1.1.1.RELEASE",
+            "com.google.code.gson:gson:2.8.2",
+            "org.projectlombok:lombok",
+            "org.quartz-scheduler:quartz:2.3.0",
+            "org.springframework:spring-context-support:4.0.6.RELEASE",
+            "org.mockito:mockito-all:1.10.19",
+            "org.mockito:mockito-core:2.9.0"
+    )
+
+}
