@@ -13,6 +13,3 @@ public class MyTest5 {
         System.out.println(clazz2.getClassLoader());
     }
 }
-class Cl {
-
-}
